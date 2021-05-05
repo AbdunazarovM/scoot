@@ -1,0 +1,48 @@
+/*Fonts*/
+@font-face {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    src:
+         url("../fonts/space-mono-v6-latin-regular.woff2") format("woff2"),
+         url("../fonts/space-mono-v6-latin-regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    src:
+         url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"),
+         url("../fonts/space-mono-v6-latin-700.woff") format("woff");
+  }
+
+/*CUSTOM PROPERTIES*/
+:root{
+    --text-color: #939caa;
+    --title-color: #495567;
+    --white-color: #fff;
+    --padding-color: #FCB72B;
+    --line-color: #E5ecf4;
+}
+
+/*WEB FONTS RELATED*/
+
+
+/*GLOBAL STYLES*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif;
+    font-family: "Space Mono", "Arial", monospace;
+    font-size: 15px;
+    line-height: 1.67;
+    color: #939caa;
+}
