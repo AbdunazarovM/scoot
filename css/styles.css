@@ -60,7 +60,7 @@ body{
     padding: 22px 0;
 }
 
-.site-header__container, .site-footer__container{
+.site-header__container, .site-footer-bottom__container{
     display: flex;
     align-items: center;
 }
@@ -116,7 +116,42 @@ body{
 
 /* Site-footer boshlandi */
 
-.site-footer{
+.site-footer-top{
+    background-color: var(--title-color);
+    background-image: url("../images/site-footer-bg-circles.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 305px) 140px;
+    padding: 102px 0;
+}
+
+.site-footer-top__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer-top__title{
+    max-width: 415px;
+    margin: 0;
+    color: var(--white-color);
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.1px;
+}
+
+.site-footer-top__app-market{
+    display: flex;
+}
+
+.app-market__link img{
+    display: block;
+}
+
+.app-market__link:not(:last-child){
+    margin-right: 18px;
+}
+
+.site-footer-bottom{
     background-color: #333a44;
     padding-top: 35px;
     padding-bottom: 32px;
@@ -126,23 +161,16 @@ body{
     margin-right: auto;
 }
 
-
 .site-footer__social{
     display: flex;
-}
-
-.site-footer__social-icon{
-
 }
 
 .site-footer__social-icon:not(:last-child){
     margin-right: 24px;
 }
 
-.site-footer__social-icon a{
-
-}
-
 .site-footer__social-icon a img{
     display: block;
 }
+
+/* Footer tugadi */
