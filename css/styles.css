@@ -25,9 +25,6 @@
     --line-color: #E5ecf4;
 }
 
-/*WEB FONTS RELATED*/
-
-
 /*GLOBAL STYLES*/
 html{
     box-sizing: border-box;
@@ -46,3 +43,73 @@ body{
     line-height: 1.67;
     color: #939caa;
 }
+
+.container{
+    max-width: 1150px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+/* Site header boshlandi */
+
+.site-header{
+    padding: 22px 0;
+}
+
+.site-header__container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 58px;
+}
+
+.logo-img{
+    display: block;
+}
+
+.navbar{
+    margin-right: auto;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__item{
+    /* margin-bottom: -10px; */
+}
+
+.navbar__item:not(:last-child){
+    margin-right: 32px;
+}
+
+.navbar__link{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.scootin-link{
+    color: var(--white-color);
+    padding: 14px 39px;
+    background-color: var(--padding-color);
+    text-decoration: none;
+}
+
+/*Site-header tugadi*/
+
+
+/*Sticky footer boshlandi*/
+
+.sticky{
+    flex-grow: 1;
+}
+
+/*Sticky footer tugadi  */
