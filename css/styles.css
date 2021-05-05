@@ -1,19 +1,29 @@
 /*Fonts*/
 @font-face {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    src:
+         url("../fonts/lexend-deca-v7-latin-regular.woff2") format("woff2"),
+         url("../fonts/lexend-deca-v7-latin-regular.woff") format("woff");
+  }
+/* space-mono-regular - latin */
+@font-face {
     font-family: "Space Mono";
     font-style: normal;
     font-weight: 400;
     src:
-         url("../fonts/space-mono-v6-latin-regular.woff2") format("woff2"),
-         url("../fonts/space-mono-v6-latin-regular.woff") format("woff");
+         url("../fonts/space-mono-v6-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("../fonts/space-mono-v6-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+  /* space-mono-700 - latin */
   @font-face {
     font-family: "Space Mono";
     font-style: normal;
     font-weight: 700;
     src:
-         url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"),
-         url("../fonts/space-mono-v6-latin-700.woff") format("woff");
+         url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("../fonts/space-mono-v6-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
 /*CUSTOM PROPERTIES*/
@@ -21,7 +31,7 @@
     --text-color: #939caa;
     --title-color: #495567;
     --white-color: #fff;
-    --padding-color: #FCB72B;
+    --padding-color: #fcb72b;
     --line-color: #E5ecf4;
 }
 
@@ -42,18 +52,19 @@ body{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    font-family: "Space Mono", "Arial", monospace;
+    font-family: "Lexend Deca", "Space Mono", sans-serif;
     font-size: 15px;
     line-height: 1.67;
     color: #939caa;
+    overflow-x: hidden;
 }
 
 .container{
-    max-width: 1150px;
+    max-width: 1160px;
     padding: 0 25px;
     margin: 0 auto;
 }
-
+    
 /* Site header boshlandi */
 
 .site-header{
@@ -90,13 +101,15 @@ body{
 }
 
 .navbar__link, .site-footer__link{
+    font-family: "Space Mono", sans-serif;
     text-decoration: none;
     font-size: 15px;
     line-height: 1.7;
     color: var(--text-color);
 }
 
-.scootin-link{
+.scootin-link, .hero__link{
+    display: block;
     color: var(--white-color);
     padding: 14px 39px;
     background-color: var(--padding-color);
@@ -104,6 +117,88 @@ body{
 }
 
 /*Site-header tugadi*/
+
+/* Hero boshlandi */
+
+.hero{
+    padding: 153px 0;
+    color: var(--white-color);
+    background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                    url("../images/site-hero-bg-scoot.png");
+
+    background-position: center center,
+                        calc(50% + 285px) -950px;
+
+    background-repeat: no-repeat;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title{
+    font-family: "Space Mono", sans-serif;
+    width: 500px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    letter-spacing: -2.5px;
+    font-size: 56px;
+    line-height: 1;
+    color: var(--white-color);
+    position: relative;
+}
+
+.hero__title::after{
+    content: "";
+    position: absolute;
+    top: 290px;
+    right: -780px;
+    width: 234px;
+    height: 63px;
+    background-image: url("../images/site-hero-bg-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero__text{
+    width: 405px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: 95px;
+    position: relative;
+}
+
+.hero__text::before{
+    content: "";
+    position: absolute;
+    left: -250px;
+    width: 203px;
+    height: 10px;
+    background-color: var(--padding-color);
+}
+
+.hero__text::after{
+    content: "";
+    position: absolute;
+    left: 450px;
+    top: 45px;
+    width: 450px;
+    height: 100px;
+    background-image: url("../images/hero-right-arrov.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero__link{
+    align-self: start;
+    margin-left: 95px;
+}
+
+
+/* Hero tugadi */
 
 
 /*Sticky footer boshlandi*/
@@ -131,6 +226,7 @@ body{
 }
 
 .site-footer-top__title{
+    font-family: "Space Mono", sans-serif;
     max-width: 415px;
     margin: 0;
     color: var(--white-color);
