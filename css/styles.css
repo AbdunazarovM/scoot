@@ -32,7 +32,7 @@
     --title-color: #495567;
     --white-color: #fff;
     --padding-color: #fcb72b;
-    --line-color: #E5ecf4;
+    --line-color: #e5ecf4;
 }
 
 /*GLOBAL STYLES*/
@@ -199,6 +199,79 @@ body{
 
 
 /* Hero tugadi */
+
+/* Order boshlandi */
+
+.order{
+    padding-top: 160px;
+    padding-bottom: 147px;
+}
+
+.order__container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.order__container::before{
+    content: "";
+    position: absolute;
+    width: 974px;
+    height: 10px;
+    left: -200px;
+    top: 43px;
+    background-color: var(--line-color);
+    z-index: -1; 
+}
+
+.order__info{
+    width: 350px;
+}
+
+.order__info::before{
+    content: "";
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: var(--padding-color);
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.locate-with-app::before{
+    background-image: url("../images/locate-with-app.svg");
+}
+
+.pick-your-scooter::before{
+    background-image: url("../images/pick-your-scooter.svg");
+}
+
+.enjoy-the-rive::before{
+    background-image: url("../images/enjoy-the-ride.svg");
+}
+
+.order__info:not(:last-child){
+    margin-right: 30px;
+}
+
+.order__title{
+    font-family: "Space Mono", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--title-color);
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+
+.order__text{
+
+}
+
+
+/* Order tugadi */
 
 
 /*Sticky footer boshlandi*/
