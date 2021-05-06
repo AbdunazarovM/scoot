@@ -1,0 +1,128 @@
+/*CUSTOM PROPERTIES*/
+:root{
+    --text-color: #939caa;
+    --title-color: #495567;
+    --white-color: #fff;
+    --padding-color: #fcb72b;
+    --line-color: #e5ecf4;
+    --font-mono: "Space Mono", "Arial", sans-serif;
+}
+
+
+/* Hero boshlandi */
+.hero{
+    padding: 72px 0;
+    color: var(--white-color);
+    background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                    url("../images/careers-bg.png");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title{
+    font-family: var(--font-mono);
+    margin: 0;
+    letter-spacing: -2.5px;
+    font-size: 56px;
+    line-height: 1;
+    color: var(--white-color);
+    position: relative;
+}
+
+.hero__title::after{
+    content: "";
+    position: absolute;
+    right: -150px;
+    width: 234px;
+    height: 63px;
+    background-image: url("../images/site-hero-bg-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Hero tugadi */
+
+/* Join Us boshlandi */
+
+.join-us{
+    padding-top: 186px;
+    padding-bottom: 186px;
+}
+
+.join-us-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.join-us-item::before{
+    content: "";
+    position: absolute;
+    left: 660px;
+    width: 954px;
+    height: 445px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -2;
+}
+
+.our-mission::before{
+    background-image: url("../images/black-man.png");
+}
+
+
+.join-us-details{
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    position: relative;
+}
+
+.join-us-details::after{
+    content: "";
+    position: absolute;
+    width: 741px;
+    height: 151px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -1;
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    top: 230px;
+    left: 530px;
+}
+
+.work-title{
+    font-family: var(--font-mono);
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14px;
+}
+
+.work-text{
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.join-us__link{
+    align-self: start;
+    font-weight: 700;
+    display: block;
+    color: var(--white-color);
+    padding: 14px 44px;
+    background-color: var(--padding-color);
+    text-decoration: none;
+}
+
+/* join-us tugadi */

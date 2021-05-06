@@ -77,7 +77,7 @@
 .service-item::before{
     content: "";
     position: absolute;
-    left: 485px;
+    left: 660px;
     width: 954px;
     height: 445px;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@
 }
 
 .service-item:nth-child(even)::before{
-    left: -345px;
+    left: -510px;
 }
 
 .mobility-for::before{
