@@ -110,6 +110,7 @@ body{
 
 .scootin-link, .hero__link{
     display: block;
+    font-weight: 700;
     color: var(--white-color);
     padding: 14px 39px;
     background-color: var(--padding-color);
@@ -204,7 +205,6 @@ body{
 
 .order{
     padding-top: 160px;
-    padding-bottom: 147px;
 }
 
 .order__container{
@@ -265,13 +265,125 @@ body{
     margin-bottom: 27px;
 }
 
+/* Order tugadi */
 
-.order__text{
 
+/* Services boshlandi */
+
+.services{
+    padding: 200px 0;
 }
 
+.services__list{
+    padding: 0;
+    list-style: none;
+}
 
-/* Order tugadi */
+.service-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.service-item:not(:last-child){
+    margin-bottom: 292px;
+}
+
+.service-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.service-item::before{
+    content: "";
+    position: absolute;
+    left: 667px;
+    width: 954px;
+    height: 445px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -2;
+}
+
+.service-item:nth-child(even)::before{
+    left: -520px;
+}
+
+.easy-to-use::before{
+    background-image: url("../images/easu-to-use-riding-telemetry.png");
+}
+
+.city-near-you::before{
+    background-image: url("../images/Coming-to-a-city-near-you.png");
+}
+
+.payment-info::before{
+    background-image: url("../images/zero-hassle-payments.png");
+}
+
+.service-details{
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    position: relative;
+}
+
+.service-details::after{
+    content: "";
+    position: absolute;
+    width: 741px;
+    height: 151px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -1;
+}
+
+.easy-to-use .service-details::after{
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    top: 215px;
+    left: 550px;
+}
+
+.city-near-you .service-details::after{
+    background-image: url("../images/hero-right-arrov.svg");
+    top: -70px;
+    left: -1090px;
+}
+
+.payment-info .service-details::after{
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    top: 10px;
+    left: 915px;
+}
+
+.work-title{
+    font-family: "Space Mono", sans-serif;
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14px;
+}
+
+.work-text{
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.services__link{
+    align-self: start;
+    font-weight: 700;
+    display: block;
+    color: var(--white-color);
+    padding: 14px 44px;
+    background-color: var(--padding-color);
+    text-decoration: none;
+}
+
+/* Services tugadi */
 
 
 /*Sticky footer boshlandi*/
