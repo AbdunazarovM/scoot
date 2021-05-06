@@ -126,3 +126,95 @@
 }
 
 /* join-us tugadi */
+
+/* Order boshlandi */
+
+.order{
+    padding-bottom: 120px;
+}
+
+.order__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order__title, .faqs__title{
+    font-family: var(--font-mono);
+    font-size: 48px;
+    line-height: 1;
+    color: var(--title-color);
+    margin: 0;
+    margin-bottom: 103px;
+}
+
+.order__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-number{
+    position: relative;
+    top: -65px;
+    padding: 34px;
+    border-radius: 50%;
+    background-color: var(--padding-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--title-color);
+    letter-spacing: -1.1px;
+    font-family: var(--font-mono);
+}
+
+.order__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    text-align: center;
+    position: relative;
+}
+
+.order__info::before{
+    content: "";
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-bottom: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+
+}
+
+.our-tech::before{
+    background-image: url("../images/phone-writing.png");
+}
+
+.our-integrity::before{
+    background-image: url("../images/motorbike.png");
+}
+
+.our-community::before{
+    background-image: url("../images/people-walk.png");
+}
+
+.order__info:not(:last-child){
+    margin-right: 30px;
+}
+
+.order__items-title{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--title-color);
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.order__text{
+    margin: 0;
+}
+
+/* Order tugadi */
