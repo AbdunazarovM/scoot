@@ -36,3 +36,110 @@
 }
 
 /* Hero tugadi */
+
+/* Services boshlandi */
+
+.services{
+    padding: 200px 0;
+}
+
+.services__list{
+    padding: 0;
+    list-style: none;
+}
+
+.service-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.service-item:not(:last-child){
+    margin-bottom: 292px;
+}
+
+.service-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.service-item::before{
+    content: "";
+    position: absolute;
+    left: 485px;
+    width: 954px;
+    height: 445px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -2;
+}
+
+.service-item:nth-child(even)::before{
+    left: -345px;
+}
+
+.mobility-for::before{
+    background-image: url("../images/mobility-for.png");
+}
+
+.better::before{
+    background-image: url("../images/better.png");
+}
+
+.service-details{
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    position: relative;
+}
+
+.service-details::after{
+    content: "";
+    position: absolute;
+    width: 741px;
+    height: 151px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -1;
+}
+
+.mobility-for .service-details::after{
+    background-image: url("../images/arrov-right-look-top.svg");
+    top: 135px;
+    left: 510px;
+}
+
+.better .service-details::after{
+    background-image: url("../images/hero-right-arrov.svg");
+    top: -110px;
+    left: -1080px;
+}
+
+.work-title{
+    font-family: var(--font-mono);
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14px;
+}
+
+.work-text{
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.services__link{
+    align-self: start;
+    font-weight: 700;
+    display: block;
+    color: var(--white-color);
+    padding: 14px 44px;
+    background-color: var(--padding-color);
+    text-decoration: none;
+}
+
+/* Services tugadi */
