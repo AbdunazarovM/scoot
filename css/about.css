@@ -1,3 +1,13 @@
+/*CUSTOM PROPERTIES*/
+:root{
+    --text-color: #939caa;
+    --title-color: #495567;
+    --white-color: #fff;
+    --padding-color: #fcb72b;
+    --line-color: #e5ecf4;
+    --font-mono: "Space Mono", "Arial", sans-serif;
+}
+
 /* Hero boshlandi */
 .hero{
     padding: 72px 0;
@@ -157,7 +167,7 @@
     align-items: center;
 }
 
-.order__title{
+.order__title, .faqs__title{
     font-family: var(--font-mono);
     font-size: 48px;
     line-height: 1;
@@ -236,3 +246,92 @@
 }
 
 /* Order tugadi */
+
+/* FAQs section boshlandi */
+
+.faqs{
+    padding-bottom: 160px;
+}
+
+.faqs__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs__title{
+    margin-bottom: 64px;
+}
+
+.how-it-works{
+    display: flex;
+    align-items: flex-start;
+}
+
+.how-it-work__title{
+    font-family: var(--font-mono);
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--title-color);
+    letter-spacing: -1.8px;
+    margin: 0;
+    margin-right: 70px;
+}
+
+.faqs__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.faqs__list:nth-last-of-type(1){
+    margin-bottom: 64px;
+}
+
+.faqs__item{
+    width: 730px;
+    padding: 32px 40px;
+    background-color: #f2f5f9;
+}
+
+.faqs__item:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.faqs__item h4{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+    color: var(--title-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faqs__item h4::after{
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../images/up.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.faqs__item:active.faqs__item p{
+    display: block;
+}
+
+
+
+.faqs__item p{
+    display: none;
+    margin: 0;
+    margin-top: 24px;
+    color: var(--title-color);
+}
+
+
+/* FAQs section tugadi */

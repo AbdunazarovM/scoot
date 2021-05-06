@@ -1,3 +1,12 @@
+/*CUSTOM PROPERTIES*/
+:root{
+    --text-color: #939caa;
+    --title-color: #495567;
+    --white-color: #fff;
+    --padding-color: #fcb72b;
+    --line-color: #e5ecf4;
+    --font-mono: "Space Mono", "Arial", sans-serif;
+}
 
 /* Hero boshlandi */
 .hero{
