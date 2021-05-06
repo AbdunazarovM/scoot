@@ -1,134 +1,5 @@
-/*Fonts*/
-@font-face {
-    font-family: "Lexend Deca";
-    font-style: normal;
-    font-weight: 400;
-    src:
-         url("../fonts/lexend-deca-v7-latin-regular.woff2") format("woff2"),
-         url("../fonts/lexend-deca-v7-latin-regular.woff") format("woff");
-  }
-@font-face {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    src:
-         url("../fonts/space-mono-v6-latin-regular.woff2") format("woff2"),
-         url("../fonts/space-mono-v6-latin-regular.woff") format("woff");
-  }
-  @font-face {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 700;
-    src:
-         url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"),
-         url("../fonts/space-mono-v6-latin-700.woff") format("woff");
-  }
-
-/*CUSTOM PROPERTIES*/
-:root{
-    --text-color: #939caa;
-    --title-color: #495567;
-    --white-color: #fff;
-    --padding-color: #fcb72b;
-    --line-color: #e5ecf4;
-}
-
-/*GLOBAL STYLES*/
-html{
-    height: 100%;
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
-
-body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-    font-family: "Lexend Deca", "Space Mono", sans-serif;
-    font-size: 15px;
-    line-height: 1.67;
-    color: #939caa;
-    overflow-x: hidden;
-}
-
-.container{
-    max-width: 1160px;
-    padding: 0 25px;
-    margin: 0 auto;
-}
-
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-    
-/* Site header boshlandi */
-
-.site-header{
-    padding: 22px 0;
-}
-
-.site-header__container, .site-footer-bottom__container{
-    display: flex;
-    align-items: center;
-}
-
-.logo{
-    margin-right: 58px;
-}
-
-.logo-img{
-    display: block;
-}
-
-.navbar{
-    margin-right: auto;
-}
-
-.navbar__list, .site-footer__social, .site-footer__list{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar__item, .site-footer__item:not(:last-child){
-    margin-right: 32px;
-}
-
-.navbar__link, .site-footer__link{
-    font-family: "Space Mono", sans-serif;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--text-color);
-}
-
-.scootin-link, .hero__link{
-    display: block;
-    font-weight: 700;
-    color: var(--white-color);
-    padding: 14px 39px;
-    background-color: var(--padding-color);
-    text-decoration: none;
-}
-
-/*Site-header tugadi*/
 
 /* Hero boshlandi */
-
 .hero{
     padding: 153px 0;
     color: var(--white-color);
@@ -147,7 +18,7 @@ body{
 }
 
 .hero__title{
-    font-family: "Space Mono", sans-serif;
+    font-family: var(--font-mono);
     width: 500px;
     margin-top: 0;
     margin-bottom: 40px;
@@ -202,6 +73,12 @@ body{
 }
 
 .hero__link{
+    display: block;
+    font-weight: 700;
+    color: var(--white-color);
+    padding: 14px 39px;
+    background-color: var(--padding-color);
+    text-decoration: none;
     align-self: start;
     margin-left: 95px;
 }
@@ -265,7 +142,7 @@ body{
 }
 
 .order__title{
-    font-family: "Space Mono", sans-serif;
+    font-family: var(--font-mono);
     font-size: 24px;
     line-height: 1.2;
     color: var(--title-color);
@@ -367,7 +244,7 @@ body{
 }
 
 .work-title{
-    font-family: "Space Mono", sans-serif;
+    font-family: var(--font-mono);
     color: var(--title-color);
     margin-top: 0;
     margin-bottom: 24px;
@@ -392,74 +269,3 @@ body{
 }
 
 /* Services tugadi */
-
-
-/*Sticky footer boshlandi*/
-
-.sticky{
-    flex-grow: 1;
-}
-
-/*Sticky footer tugadi*/
-
-/* Site-footer boshlandi */
-
-.site-footer-top{
-    background-color: var(--title-color);
-    background-image: url("../images/site-footer-bg-circles.svg");
-    background-repeat: no-repeat;
-    background-position: calc(50% + 305px) 140px;
-    padding: 102px 0;
-}
-
-.site-footer-top__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-footer-top__title{
-    font-family: "Space Mono", sans-serif;
-    max-width: 415px;
-    margin: 0;
-    color: var(--white-color);
-    font-size: 48px;
-    line-height: 1;
-    letter-spacing: -2.1px;
-}
-
-.site-footer-top__app-market{
-    display: flex;
-}
-
-.app-market__link img{
-    display: block;
-}
-
-.app-market__link:not(:last-child){
-    margin-right: 18px;
-}
-
-.site-footer-bottom{
-    background-color: #333a44;
-    padding-top: 35px;
-    padding-bottom: 32px;
-}
-
-.site-footer__list{
-    margin-right: auto;
-}
-
-.site-footer__social{
-    display: flex;
-}
-
-.site-footer__social-icon:not(:last-child){
-    margin-right: 24px;
-}
-
-.site-footer__social-icon a img{
-    display: block;
-}
-
-/* Footer tugadi */
