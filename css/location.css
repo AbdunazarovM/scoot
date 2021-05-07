@@ -47,3 +47,64 @@
 }
 
 /* Hero tugadi */
+
+/* Land-map boshlandi */
+
+.land-map{
+    padding: 120px 0;
+}
+
+.city{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+    text-decoration: none;
+    color: var(--title-color);
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: var(--padding-color);
+    position: relative;
+}
+
+.city::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+    background-color: var(--padding-color);
+    bottom: -12px;
+    left: 95px;
+}
+
+.london{
+    padding-left: 53px;
+    padding-right: 53px;
+    top: -515px;
+    left: 380px;
+}
+
+.new-york{
+    padding-left: 39px;
+    padding-right: 39px;
+    top: -460px;
+    left: -60px;
+}
+
+.yokohama{
+    padding-left: 39px;
+    padding-right: 39px;
+    top: -445px;
+    left: 470px;
+}
+
+.jakarta{
+    padding-left: 56px;
+    padding-right: 56px;
+    top: -285px;
+    left: 195px;
+}
+
+/* Land-map tugadi */
