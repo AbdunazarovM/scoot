@@ -215,4 +215,8 @@ body{
     display: block;
 }
 
+.site-footer__social-icon a img:active{
+    filter: grayscale(90%);
+}
+
 /* Footer tugadi */
