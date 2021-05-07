@@ -76,7 +76,7 @@
     transform: rotate(45deg);
     background-color: var(--padding-color);
     bottom: -12px;
-    left: 95px;
+    left: 85px;
 }
 
 .london{
@@ -107,6 +107,10 @@
     left: 195px;
 }
 
+.jakarta::after{
+    left: 95px;
+}
+
 /* Land-map tugadi */
 
 /* Listed boshlandi */
@@ -122,6 +126,7 @@
 }
 
 .listed__title{
+    color: var(--title-color);
     font-family :var(--font-mono);
     font-size: 48px;
     line-height: 1;
