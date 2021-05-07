@@ -132,6 +132,14 @@ body{
     color: var(--text-color);
 }
 
+.navbar__link:active{
+    color: var(--padding-color);
+}
+
+.site-footer__link:active{
+    color: var(--padding-color);
+}
+
 .scootin-link{
     padding: 14px 39px;
 }

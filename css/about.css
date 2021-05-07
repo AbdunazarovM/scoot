@@ -274,6 +274,14 @@
     background-color: #f2f5f9;
 }
 
+.faqs__item:hover{
+    background-color: #fff4df;
+}
+
+.faqs__item:active{
+    background-color: #fff4df;
+}
+
 .faqs__item:not(:last-child){
     margin-bottom: 16px;
 }
