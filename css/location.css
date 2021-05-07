@@ -108,3 +108,43 @@
 }
 
 /* Land-map tugadi */
+
+/* Listed boshlandi */
+
+.listed{
+    padding-bottom: 120px;
+}
+
+.listed__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listed__title{
+    font-family :var(--font-mono);
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14px;
+    margin: 0;
+    width: 350px;
+    margin-right: 20px;
+}
+
+.listed__text{
+    margin: 0;
+    width: 445px;
+    margin-right: 50px;
+}
+
+.listed__link{
+    text-decoration: none;
+    padding: 14px 44px;
+    color: var(--white-color);
+    background-color: var(--padding-color);
+    font-weight: 700;
+    font-family: var(--font-mono);
+}
+
+
+/* Listed tugadi */
