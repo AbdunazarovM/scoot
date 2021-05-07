@@ -72,6 +72,22 @@ body{
     white-space: nowrap;
     width: 1px;
   }
+
+.btn{
+    display: block;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--white-color);
+    background-color: var(--padding-color);
+    text-decoration: none;
+    border: 2px solid var(--padding-color);
+    align-self: start;
+}
+
+.btn:hover{
+    color: var(--padding-color);
+    background-color: transparent;
+}
     
 /* Site header boshlandi */
 
@@ -117,12 +133,7 @@ body{
 }
 
 .scootin-link{
-    display: block;
-    font-weight: 700;
-    color: var(--white-color);
     padding: 14px 39px;
-    background-color: var(--padding-color);
-    text-decoration: none;
 }
 
 /*Site-header tugadi*/
