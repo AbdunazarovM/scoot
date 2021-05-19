@@ -827,3 +827,63 @@ body{
     padding: 12px 42px;
 }
 
+/* CAREERS CSS */
+
+
+/* JOIN-US */
+.join-us{
+    padding-top: 186px;
+    padding-bottom: 186px;
+}
+
+
+.our-mission::before{
+    background-image: url("../images/black-man.png");
+}
+
+.join-us-details::after{
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    top: 230px;
+    left: 530px;
+}
+
+/* PROFESSIONS */
+.professions{
+    padding-bottom: 160px;
+}
+
+.professions__list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.professions__icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f5f9;
+    padding: 32px 64px 35px 40px;
+}
+
+.professions__icon:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.professions__info{
+    color: var(--title-color);
+}
+
+.professions__info h3{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--title-color);
+    margin: 0;
+    letter-spacing: -1.1px;
+    margin-bottom: 8px;
+}
+
+.apply__link{
+    padding: 12px 65px;
+}
