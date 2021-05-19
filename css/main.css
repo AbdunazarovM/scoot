@@ -34,6 +34,8 @@
     --font-mono: "Space Mono", "Arial", sans-serif;
 }
 
+/* MAIN CSS */
+
 /*GLOBAL STYLES*/
 html{
     height: 100%;
@@ -89,8 +91,7 @@ body{
     background-color: transparent;
 }
     
-/* Site header boshlandi */
-
+/* SITE-HERADER */
 .site-header{
     padding: 22px 0;
 }
@@ -144,19 +145,14 @@ body{
     padding: 14px 39px;
 }
 
-/*Site-header tugadi*/
 
-
-/*Sticky footer boshlandi*/
-
+/* STICKY-FOOTER */
 .sticky{
     flex-grow: 1;
 }
 
-/*Sticky footer tugadi*/
 
-/* Site-footer boshlandi */
-
+/* SITE-FOOTER */
 .site-footer-top{
     background-color: var(--title-color);
     background-image: url("../images/site-footer-bg-circles.svg");
@@ -219,4 +215,509 @@ body{
     filter: grayscale(90%);
 }
 
-/* Footer tugadi */
+/* INDEX CSS */
+
+/* HERO */
+.index-hero{
+    padding: 153px 0;
+    color: var(--white-color);
+    background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                    url("../images/site-hero-bg-scoot.png");
+
+    background-position: center center,
+                        calc(50% + 285px) -950px;
+
+    background-repeat: no-repeat;
+}
+
+.index-hero__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.index-hero__title{
+    font-family: var(--font-mono);
+    width: 500px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    letter-spacing: -2.5px;
+    font-size: 56px;
+    line-height: 1;
+    color: var(--white-color);
+    position: relative;
+}
+
+.index-hero__title::after{
+    content: "";
+    position: absolute;
+    top: 290px;
+    right: -780px;
+    width: 234px;
+    height: 63px;
+    background-image: url("../images/site-hero-bg-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.index-hero__text{
+    width: 405px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: 95px;
+    position: relative;
+}
+
+.index-hero__text::before{
+    content: "";
+    position: absolute;
+    left: -250px;
+    width: 203px;
+    height: 10px;
+    background-color: var(--padding-color);
+}
+
+.index-hero__text::after{
+    content: "";
+    position: absolute;
+    left: 450px;
+    top: 45px;
+    width: 450px;
+    height: 100px;
+    background-image: url("../images/hero-right-arrov.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.index-hero__link{
+    padding: 12px 37px;
+    margin-left: 95px;
+}
+
+
+
+/* index-ORDER */
+.index-order{
+    padding-top: 160px;
+}
+
+.index-order__container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.index-order__container::before{
+    content: "";
+    position: absolute;
+    width: 974px;
+    height: 10px;
+    left: -170px;
+    top: 43px;
+    background-color: var(--line-color);
+    z-index: -1; 
+}
+
+.index-order__info{
+    width: 350px;
+}
+
+.index-order__info::before{
+    content: "";
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: var(--padding-color);
+    margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.locate-with-app::before{
+    background-image: url("../images/locate-with-app.svg");
+}
+
+.pick-your-scooter::before{
+    background-image: url("../images/pick-your-scooter.svg");
+}
+
+.enjoy-the-rive::before{
+    background-image: url("../images/enjoy-the-ride.svg");
+}
+
+.index-order__info:not(:last-child){
+    margin-right: 30px;
+}
+
+.index-order__title{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--title-color);
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.index-order__text{
+    margin: 0;
+}
+
+
+/* SERVICE */
+.services{
+    padding-top: 200px;
+    padding-bottom: 225px;
+}
+
+.services__list{
+    padding: 0;
+    list-style: none;
+}
+
+.service-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.service-item:not(:last-child){
+    margin-bottom: 292px;
+}
+
+.service-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.service-item::before{
+    content: "";
+    position: absolute;
+    left: 660px;
+    width: 954px;
+    height: 445px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -2;
+}
+
+.service-item:nth-child(even)::before{
+    left: -515px;
+}
+
+.easy-to-use::before{
+    background-image: url("../images/easu-to-use-riding-telemetry.png");
+}
+
+.city-near-you::before{
+    background-image: url("../images/Coming-to-a-city-near-you.png");
+}
+
+.payment-info::before{
+    background-image: url("../images/zero-hassle-payments.png");
+}
+
+.mobility-for::before{
+    background-image: url("../images/mobility-for.png");
+}
+
+.better::before{
+    background-image: url("../images/better.png");
+}
+
+.service-details{
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    position: relative;
+}
+
+.service-details::after{
+    content: "";
+    position: absolute;
+    width: 741px;
+    height: 151px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: -1;
+}
+
+.easy-to-use .service-details::after{
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    top: 215px;
+    left: 550px;
+}
+
+.city-near-you .service-details::after{
+    background-image: url("../images/hero-right-arrov.svg");
+    top: -70px;
+    left: -1090px;
+}
+
+.payment-info .service-details::after{
+    background-image: url("../images/yellow-arrow-to-left.svg");
+    top: 10px;
+    left: 915px;
+}
+
+.mobility-for .service-details::after{
+    background-image: url("../images/arrov-right-look-top.svg");
+    top: 135px;
+    left: 510px;
+}
+
+.better .service-details::after{
+    background-image: url("../images/hero-right-arrov.svg");
+    top: -110px;
+    left: -1080px;
+}
+
+.work-title{
+    font-family: var(--font-mono);
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2.14px;
+}
+
+.work-text{
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.services__link{
+    padding: 12px 42px;
+}
+
+/* ABOUT CSS */
+
+/* HERO */
+.about-hero{
+    padding: 72px 0;
+    color: var(--white-color);
+    background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+                    url("../images/about-bg.png");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title{
+    font-family: var(--font-mono);
+    margin: 0;
+    letter-spacing: -2.5px;
+    font-size: 56px;
+    line-height: 1;
+    color: var(--white-color);
+    position: relative;
+}
+
+.hero__title::after{
+    content: "";
+    position: absolute;
+    right: -150px;
+    width: 234px;
+    height: 63px;
+    background-image: url("../images/site-hero-bg-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* ORDER */
+.order{
+    padding-bottom: 120px;
+}
+
+.order__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order__title, .faqs__title{
+    font-family: var(--font-mono);
+    font-size: 48px;
+    line-height: 1;
+    color: var(--title-color);
+    margin: 0;
+    margin-bottom: 103px;
+}
+
+.order__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-number{
+    position: relative;
+    top: -65px;
+    padding: 34px;
+    border-radius: 50%;
+    background-color: var(--padding-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--title-color);
+    letter-spacing: -1.1px;
+    font-family: var(--font-mono);
+}
+
+.order__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    text-align: center;
+    position: relative;
+}
+
+.order__info::before{
+    content: "";
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-bottom: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+
+}
+
+.our-tech::before{
+    background-image: url("../images/phone-writing.png");
+}
+
+.our-integrity::before{
+    background-image: url("../images/motorbike.png");
+}
+
+.our-community::before{
+    background-image: url("../images/people-walk.png");
+}
+
+.order__info:not(:last-child){
+    margin-right: 30px;
+}
+
+.order__items-title{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--title-color);
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.order__text{
+    margin: 0;
+}
+
+
+/* FAQs SECTION */
+.faqs{
+    padding-bottom: 160px;
+}
+
+.faqs__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs__title{
+    margin-bottom: 64px;
+}
+
+.how-it-works{
+    display: flex;
+    align-items: flex-start;
+}
+
+.how-it-work__title{
+    font-family: var(--font-mono);
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--title-color);
+    letter-spacing: -1.8px;
+    margin: 0;
+    margin-right: 70px;
+}
+
+.faqs__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.faqs__list:nth-last-of-type(1){
+    margin-bottom: 64px;
+}
+
+.faqs__item{
+    width: 730px;
+    padding: 32px 40px;
+    background-color: #f2f5f9;
+}
+
+.faqs__item:hover{
+    background-color: #fff4df;
+}
+
+.faqs__item:active{
+    background-color: #fff4df;
+}
+
+.faqs__item:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.faqs__item h4{
+    font-family: var(--font-mono);
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -1.1px;
+    color: var(--title-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faqs__item h4::after{
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../images/up.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.faqs__item:active.faqs__item p{
+    display: block;
+}
+
+
+
+.faqs__item p{
+    display: none;
+    margin: 0;
+    margin-top: 24px;
+    color: var(--title-color);
+}
+
+
+/* LOCATION CSS */
+
+/* HERO */

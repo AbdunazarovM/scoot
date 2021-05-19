@@ -1,5 +1,5 @@
 /* Hero boshlandi */
-.hero{
+/*.hero{
     padding: 153px 0;
     color: var(--white-color);
     background-image: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
@@ -81,7 +81,7 @@
 
 /* Order boshlandi */
 
-.order{
+/*.order{
     padding-top: 160px;
 }
 
@@ -152,7 +152,7 @@
 
 /* Services boshlandi */
 
-.services{
+/*.services{
     padding: 200px 0;
 }
 
