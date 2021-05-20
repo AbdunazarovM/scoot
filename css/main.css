@@ -101,6 +101,31 @@ body{
     align-items: center;
 }
 
+.burger-btn{
+    display: none;
+    width: 20px;
+    height: 4px;
+    background-color: var(--padding-color);
+    position: absolute;
+    cursor: pointer;
+}
+
+.burger-btn::before, .burger-btn::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: var(--padding-color);
+}
+
+.burger-btn::before{
+    top: -7px;
+}
+
+.burger-btn::after{
+    top: 7px;
+}
+
 .logo{
     margin-right: 58px;
 }
@@ -237,7 +262,7 @@ body{
 
 .index-hero__title{
     font-family: var(--font-mono);
-    width: 500px;
+    max-width: 500px;
     margin-top: 0;
     margin-bottom: 40px;
     letter-spacing: -2.5px;
@@ -297,7 +322,7 @@ body{
 
 
 
-/* index-ORDER */
+/* INDEX-ORDER */
 .index-order{
     padding-top: 160px;
 }
@@ -320,7 +345,7 @@ body{
 }
 
 .index-order__info{
-    width: 350px;
+    max-width: 350px;
 }
 
 .index-order__info::before{
@@ -372,6 +397,7 @@ body{
 }
 
 .services__list{
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -886,4 +912,261 @@ body{
 
 .apply__link{
     padding: 12px 65px;
+}
+
+
+/* RESPONSIVE MOBILE */
+@media only screen and (max-width: 375px){
+
+    /* SITE-HEDER */
+    .burger-btn{
+        display: block;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .scootin-link{
+        display: none;
+    }
+
+    /* SITE-FOOTER */
+    .site-footer-top{
+        background-position: calc(50% + -214px) 155px;
+        padding: 88px 0;
+    }
+
+    .site-footer-top__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer-top__title{
+        max-width: 311px;
+        font-size: 32px;
+        letter-spacing: -1.4px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .site-footer-top__app-market{
+        display: flex;
+    }
+
+    .app-market__link img{
+        width: 114px;
+        height: 40px;
+    }
+
+    .app-market__link img:last-child{
+        width: 130px;
+        height: 40px;
+    }
+
+    .app-market__link:not(:last-child){
+        margin-right: 13px;
+    }
+
+    .site-footer-bottom{
+        padding-top: 64px;
+        padding-bottom: 88px;
+    }
+
+    .site-footer-bottom__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer-bottom__container .logo{
+        margin-bottom: 42px;
+    }
+
+    .site-footer__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 87px;
+    }
+
+    .site-footer__item:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    /* INDEX-HERO */
+
+    .index-hero{
+        padding-top: 115px;
+        padding-bottom: 179px; 
+        background-position: center center,
+                            calc(50% - 170px) -960px;
+    }
+
+    .index-hero__container{
+        align-items: center;
+    }
+
+    .index-hero__title{
+        max-width: 311px;
+        margin-bottom: 24px;
+        letter-spacing: -1.8px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .index-hero__text{
+        width: 311px;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 34px;
+    }
+
+    .index-hero__link{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .index-hero__text::before{
+        content: none;
+    }
+
+    .index-hero__text::after{
+        left: -335px;
+        top: 210px;
+        height: 150px;
+    }
+
+    /* INDEX-ORDER */
+    .index-order{
+        padding-top: 120px;
+        padding-bottom: 270px;
+    }
+
+    .index-order__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index-order__container::before{
+        content: none;
+    }
+
+    .index-order__info{
+        max-width: 311px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index-order__info::before{
+        width: 56px;
+        height: 56px;
+        background-size: 22px 28px;
+        margin-bottom: 24px;
+    }
+
+    .index-order__info:not(:last-child){
+        margin-bottom: 48px;
+    }
+
+    .index-order__title{
+        font-size: 20px;
+        line-height: 1.4;
+        color: var(--title-color);
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .index-order__text{
+        margin: 0;
+        text-align: center;
+    }
+
+    /* SERVICE */
+    .services{
+        padding-bottom: 120px;
+    }
+
+    .services__list{
+        padding: 0;
+        list-style: none;
+    }
+
+    .service-item{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .service-item:not(:last-child){
+        margin-bottom: 475px;
+    }
+
+    .service-item::before{
+        top: -530px;
+        left: 15px;
+        width: 650px;
+        height: 650px;
+    }
+
+    .service-item:nth-child(even)::before{
+        left: -335px;
+    }
+
+    .service-details{
+        width: 311px;
+    }
+
+    .easy-to-use .service-details::after{
+        top: -205px;
+        left: 15px;
+    }
+
+    .city-near-you .service-details::after{
+        top: -310px;
+        left: -390px;
+    }
+
+    .payment-info .service-details::after{
+        top: -355px;
+        left: 120px;
+    }
+
+    .mobility-for .service-details::after{
+        background-image: url("../images/arrov-right-look-top.svg");
+        top: 135px;
+        left: 510px;
+    }
+
+    .better .service-details::after{
+        background-image: url("../images/hero-right-arrov.svg");
+        top: -110px;
+        left: -1080px;
+    }
+
+    .work-title{
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: 32px;
+        letter-spacing: -1.4px;
+    }
+
+    .work-text{
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .services__link{
+        margin: 0 auto;
+    }
+
 }
