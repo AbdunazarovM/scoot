@@ -574,6 +574,7 @@ body{
 .order__title, .faqs__title{
     font-family: var(--font-mono);
     font-size: 48px;
+    letter-spacing: -2.1px;
     line-height: 1;
     color: var(--title-color);
     margin: 0;
@@ -617,7 +618,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
-
 }
 
 .our-tech::before{
@@ -686,7 +686,7 @@ body{
     list-style-type: none;
 }
 
-.faqs__list:nth-last-of-type(1){
+.how-it-works:nth-of-type(1) .faqs__list{
     margin-bottom: 64px;
 }
 
@@ -1142,15 +1142,13 @@ body{
     }
 
     .mobility-for .service-details::after{
-        background-image: url("../images/arrov-right-look-top.svg");
-        top: 135px;
-        left: 510px;
+        top: -233px;
+        left: 5px;
     }
 
     .better .service-details::after{
-        background-image: url("../images/hero-right-arrov.svg");
-        top: -110px;
-        left: -1080px;
+        top: -365px;
+        left: -285px;
     }
 
     .work-title{
@@ -1167,6 +1165,108 @@ body{
 
     .services__link{
         margin: 0 auto;
+    }
+
+    /* ABOUT CSS */
+
+    /* HERO */
+    .about-hero{
+        padding: 60px 0;
+        background-size: cover;
+    }
+
+    .hero__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__title{
+        text-align: center;
+        letter-spacing: -1.8px;
+        font-size: 40px;
+    }
+
+    .hero__title::after{
+        content: none;
+    }
+
+    .services{
+        padding-top: 430px;
+    }
+
+
+    /* ORDER */
+    .order{
+        padding-bottom: 145px;
+    }
+
+    .order__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order__title{
+        font-size: 32px;
+        letter-spacing: -1.4px;
+        margin-bottom: 64px;
+    }
+
+    .order__items{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order__info{
+        width: 311px;
+    }
+
+    .order__info:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 55px;
+    }
+
+
+    /* FAQs SECTION */
+    .faqs__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faqs__title{
+        font-size: 32px;
+        letter-spacing: -1.4px;
+        margin-bottom: 48px;
+    }
+
+    .how-it-works{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-it-work__title{
+        font-size: 24px;
+        letter-spacing: -1.1px;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .how-it-works:nth-of-type(1) .faqs__list{
+        margin-bottom: 48px;
+    }
+
+    .faqs__item{
+        width: 311px;
+        padding: 32px 40px;
+        background-color: #f2f5f9;
+    }
+
+    .faqs__item h4{
+        font-size: 18px;
+        line-height: 1.3;
+        letter-spacing: -0.8px;
     }
 
 }
