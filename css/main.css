@@ -745,7 +745,6 @@ body{
 
 
 /* LOCATION CSS */
-
 /* HERO */
 .hero{
     padding: 72px 0;
@@ -919,6 +918,10 @@ body{
 @media only screen and (max-width: 375px){
 
     /* SITE-HEDER */
+    main{
+        overflow-x: clip;
+    }
+
     .burger-btn{
         display: block;
     }
@@ -1267,6 +1270,121 @@ body{
         font-size: 18px;
         line-height: 1.3;
         letter-spacing: -0.8px;
+    }
+
+    /* LOCATION CSS */
+    /* HERO */
+    .hero{
+        padding: 60px 0;
+    }
+
+
+    /* LAND-MAP */
+    .land-map{
+        padding: 72px 0;
+    }
+
+    .land-map__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .land-map__container img{
+        width: 311px;
+        height: 152px;
+        margin-bottom: 40px;
+    }
+
+    .land-map__container .city{
+        letter-spacing: -1.1px;
+        background-color:rgba(252, 183, 43, 0.15);
+        position: unset;
+    }
+
+    .land-map__container .city:not(:last-child){
+        margin-bottom: 16px;
+    }
+
+    .city::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transform: unset;
+    }
+
+    .new-york{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .london{
+        padding-left: 114px;
+        padding-right: 114px;
+    }
+
+    .yokohama{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .jakarta{
+        padding-left: 107px;
+        padding-right: 107px;
+    }
+
+    .new-york::after{
+        left: 100px;
+        bottom: 215px;
+    }
+
+    .london::after{
+        left: 160px;
+        bottom: 230px;
+    }
+
+    .yokohama::after{
+        left: 295px;
+        bottom: 210px;
+    }
+
+    .jakarta::after{
+        left: 270px;
+        bottom: 165px;
+    }
+
+
+    /* LISTED */
+    .listed{
+        padding-bottom: 72px;
+    }
+
+    .listed__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listed__title{
+        text-align: center;
+        font-size: 32px;
+        letter-spacing: -1.4px;
+        width: 311px;
+        margin-right: unset;
+        margin-bottom: 32px;
+    }
+
+    .listed__text{
+        width: 311px;
+        text-align: center;
+        margin-right: unset;
+        margin-bottom: 32px;
+    }
+
+    .listed__link{
+        margin: 0 auto;
     }
 
 }
