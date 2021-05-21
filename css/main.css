@@ -1173,6 +1173,7 @@ body{
     /* HERO */
     .about-hero{
         padding: 60px 0;
+        margin-bottom: 260px;
         background-size: cover;
     }
 
@@ -1192,7 +1193,7 @@ body{
     }
 
     .services{
-        padding-top: 430px;
+        padding-top: 120px;
     }
 
 
