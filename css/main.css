@@ -853,8 +853,6 @@ body{
 }
 
 /* CAREERS CSS */
-
-
 /* JOIN-US */
 .join-us{
     padding-top: 186px;
@@ -1385,6 +1383,57 @@ body{
 
     .listed__link{
         margin: 0 auto;
+    }
+
+    /* CAREERS CSS */
+    /* JOIN-US */
+    .join-us{
+        padding-top: 428px;
+        padding-bottom: 120px;
+    }
+
+
+    .our-mission::before{
+        background-image: url("../images/black-man.png");
+    }
+
+    .join-us-details::after{
+        top: -200px;
+        left: 10px;
+    }
+
+    /* PROFESSIONS */
+    .professions{
+        padding-bottom: 120px;
+    }
+
+    .professions__icon{
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px;
+        padding-top: 36px;
+    }
+
+    .professions__icon:not(:last-child){
+        margin-bottom: 16px;
+    }
+
+    .professions__info{
+        max-width: 247px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .professions__info h3{
+        font-size: 18px;
+        line-height: 1.4;
+        letter-spacing: -0.8px;
+        margin-bottom: 4px;
+    }
+
+    .apply__link{
+        margin: 0 auto;
+        padding: 12px 58px;
     }
 
 }
